@@ -1,7 +1,6 @@
 *,
 *::before,
 *::after {
-  
   img {
     display: block;
     max-width: 100%;
@@ -39,18 +38,17 @@
   --grey-color: #2e2f42b2;
   --white-color: #ffffff;
   --dairy-color: #fcfcfc;
-  
 }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -114,14 +112,29 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--navy-blue-color);
   padding: 24px 0;
+  color: var(--navy-blue-color, #2e2f42);
 }
 
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--ocean-color);
 }
+
+.link-active {
+  color: var(--ocean-color, #404bbf);
+}
+
+.link-decoration::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .contact-list {
   display: flex;
   list-style: none;
@@ -312,6 +325,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 264px;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
@@ -665,9 +679,7 @@ p.employee-specialization {
 }
 
 .footer-social-media-icon {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   fill: var(--cloud-color, #f4f4fd);
 }
-
-
