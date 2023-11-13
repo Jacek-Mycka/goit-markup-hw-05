@@ -28,20 +28,24 @@
           >
           <ul class="menu-items">
             <li class="menu-list">
- <a href="./index.html" class="navigation-link link-active link-decoration">Studio</a>
+              <a href="./index.html" class="link navigation-link link-active"
+                >Studio</a
+              >
             </li>
             <li class="menu-list">
-              <a href="./portfolio.html" class="navigation-link">Portfolio</a>
+              <a href="./portfolio.html" class="link navigation-link"
+                >Portfolio</a
+              >
             </li>
             <li class="menu-list">
-              <a href="" class="navigation-link">Contacts</a>
+              <a href="" class="link navigation-link">Contacts</a>
             </li>
           </ul>
         </nav>
         <address>
           <ul class="contact-list">
             <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="contact-link" 
+              <a href="mailto:info@devstudio.com" class="contact-link"
                 >info@devstudio.com</a
               >
             </li>
@@ -59,7 +63,13 @@
       <section class="first-section hero">
         <div class="container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button" data-modal-open>Order Service</button>
+          <button
+            type="button"
+            class="hero-button hero-modal-button"
+            data-modal-open
+          >
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -434,6 +444,18 @@
         </div>
       </div>
     </footer>
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-container">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Modal window - script  -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
